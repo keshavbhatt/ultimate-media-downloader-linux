@@ -13,6 +13,7 @@ Ultimate media downloader for Linux allows downloading Video/Audio from 100s of 
 
 * Comes with easy to use Basic Downloader
 * 1300+ supported websites
+* Direct Youtube Video and Audio only Playback with internal player without Ads 
 * Youtube Video and Playlist search to download media in bulk
 * Batch media Downloader to download media in bulk
 * Playlist Downloader allows downloading whole playlists
