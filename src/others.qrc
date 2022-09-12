@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>others/youtube_cookie.txt</file>
+        <file>others/instances.json</file>
+        <file>others/regions</file>
+    </qresource>
+</RCC>

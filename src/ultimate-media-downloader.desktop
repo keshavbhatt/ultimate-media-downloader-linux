@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+GenericName=Media Downloader
+Name[en_US]=Ultimate Media Downloader
+Comment=Media Downloader
+Name=Ultimate Media Downloader
+Type=Application
+Icon=ultimate-media-downloader
+Keywords=Ultimate Media Downloader;Downloader;UMD
+Exec=ultimate-media-downloader %u
+Categories=Utility;AudioVideo;Qt;
+Terminal=false
+X-GNOME-UsesNotifications=true

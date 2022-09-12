@@ -1,0 +1,23 @@
+(function() {
+  let S = '# Netscape HTTP Cookie File\n';
+  for (raw_cookie of document.cookie.split(';')) {
+    let cookie = raw_cookie.trim();
+    let separator = cookie.indexOf('=');
+    let name = cookie.substring(0, separator);
+    let value = cookie.substring(separator + 1);
+
+    let domain = window.location.hostname;
+    // hopefully this will convert domains like `www.test.com` and `test.com` into `.test.com`
+    domain = domain.replace('www.', '.');
+    if (domain[0] !== '.') {
+        domain = '.' + domain;
+    }
+
+    // netscape cookie file format:
+    // # domain  HTTP PATH SECURE timestamp name  value
+    // .test.com TRUE /    FALSE  123456789 token 1234abcdef
+    S += `${domain}\tTRUE\t/\tTRUE\t0\t${name}\t${value}\n`
+  }
+
+  console.log(S)
+})();

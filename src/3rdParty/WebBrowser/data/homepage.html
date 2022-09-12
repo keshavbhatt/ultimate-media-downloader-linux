@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab - Google Search</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .light-mode {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .search-container {
+            text-align: center;
+            background: #fff;
+            border-radius: 15px;
+            padding: 50px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-mode .search-container {
+            background: #1e1e1e;
+            box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            font-size: 40px;
+            color: #4285F4;
+            margin-bottom: 20px;
+        }
+        .dark-mode h1 {
+            color: #8ab4f8;
+        }
+        .search-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        input[type="text"] {
+            width: 400px;
+            padding: 10px 15px;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+            font-size: 18px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus {
+            border-color: #4285F4;
+        }
+        .dark-mode input[type="text"] {
+            background-color: #333;
+            border-color: #555;
+            color: #e0e0e0;
+        }
+        .dark-mode input[type="text"]:focus {
+            border-color: #8ab4f8;
+        }
+        button {
+            background-color: #4285F4;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-left: 15px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #357ae8;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
+        footer a {
+            color: #4285F4;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .dark-mode footer a {
+            color: #8ab4f8;
+        }
+        /* Toggle Switch */
+        .theme-toggle {
+            margin-top: 20px;
+        }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.4s;
+            border-radius: 34px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: #4285F4;
+        }
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" id="searchQuery" placeholder="Search Google..." onkeydown="handleKeyPress(event)">
+            <button onclick="searchGoogle()">Search</button>
+        </div>
+        <footer>
+        </footer>
+    </div>
+
+    <script>
+
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                searchGoogle();
+            }
+        }
+
+        function searchGoogle() {
+            var query = document.getElementById('searchQuery').value;
+            if (query) {
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+                window.location.href = url;
+            }
+        }
+
+        function toggleTheme() {
+            var body = document.body;
+            var themeLabel = document.getElementById('themeLabel');
+            var themeSwitch = document.getElementById('themeSwitch');
+            if (themeSwitch.checked) {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                themeLabel.innerText = 'Dark Mode';
+            } else {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                themeLabel.innerText = 'Light Mode';
+            }
+        }
+
+    </script>
+</body>
+</html>
