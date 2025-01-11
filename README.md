@@ -5,8 +5,6 @@ Online video &amp; audio downloader for Linux, 1300+ websites support
   <img src="https://github.com/keshavbhatt/ultimate-media-download-linux/blob/main/images/github_banner.png?raw=true">
 </p>
 
-> Note: This Page is Issue tracker for Ultimate Media Downloader Linux
-
 Ultimate media downloader for Linux allows downloading Video/Audio from 100s of websites on the internet. It allows saving media from websites on Linux Desktop. Ultimate media downloader for Linux works with many sites including Youtube, Facebook, Instagram, Twitter, TikTok, Snapchat, etc
 
 ## Key features of Ultimate Media downloader:
