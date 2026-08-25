@@ -1,8 +1,8 @@
 # Ultimate Media Downloader
-Online video &amp; audio downloader for Linux, 1300+ websites support
+Online video &amp; audio downloader for Linux, 1400+ websites support
 
 <p align="center">
-  <img src="https://github.com/keshavbhatt/ultimate-media-download-linux/blob/main/images/github_banner.png?raw=true">
+  <img src="images/github_banner.png">
 </p>
 
 Ultimate media downloader for Linux allows downloading Video/Audio from 100s of websites on the internet. It allows saving media from websites on Linux Desktop. Ultimate media downloader for Linux works with many sites including Youtube, Facebook, Instagram, Twitter, TikTok, Snapchat, etc
@@ -47,39 +47,38 @@ and run
 
 ## Screenshots of Ultimate Media Downloader
 
-![Ultimate Media Downloader](https://github.com/keshavbhatt/ultimate-media-download-linux/blob/main/images/1.jpeg?raw=true)
+![YouTube search with ad-free playback](images/1-youtube-search.png)
 <p align="center">
-  Youtube Video Search
+  YouTube search with ad-free playback
 </p>
 
-![Ultimate Media Downloader](https://github.com/keshavbhatt/ultimate-media-download-linux/blob/main/images/2.jpeg?raw=true)
+![Download any link in the quality you want](images/2-download.png)
 <p align="center">
-  Application Settings
+  Download any link in the quality you want
 </p>
 
-![Ultimate Media Downloader](https://github.com/keshavbhatt/ultimate-media-download-linux/blob/main/images/3.jpeg?raw=true)
+![Whole playlists listed in seconds](images/3-playlist.png)
 <p align="center">
-  Youtube Playlist Search
+  Whole playlists listed in seconds
 </p>
 
-![Ultimate Media Downloader](https://github.com/keshavbhatt/ultimate-media-download-linux/blob/main/images/4.jpeg?raw=true)
+![Batch downloads](images/4-batch.png)
 <p align="center">
-  Youtube browser
+  Batch downloads
 </p>
 
-![Ultimate Media Downloader](https://github.com/keshavbhatt/ultimate-media-download-linux/blob/main/images/5.jpeg?raw=true)
+![Subtitles in the languages a video offers](images/5-subtitles.png)
 <p align="center">
-  Format selection
+  Subtitles in the languages a video offers
 </p>
 
-![Ultimate Media Downloader](https://github.com/keshavbhatt/ultimate-media-download-linux/blob/main/images/6.jpeg?raw=true)
+![Library of downloaded media](images/6-library.png)
 <p align="center">
-  Media Library
+  Library of downloaded media
 </p>
 
-![Ultimate Media Downloader](https://github.com/keshavbhatt/ultimate-media-download-linux/blob/main/images/8.jpeg?raw=true)
+![Settings](images/7-settings.png)
 <p align="center">
-  Built-in Web Browser
+  Settings
 </p>
-
 
